@@ -1,0 +1,8 @@
+1. Implicit and Explicit Intents.
+2. Explicit Intents
+3. It's an implicit intent, because it does not specify which Android components should be called.
+4. It's an explicit intent, because it references the Java activity class.
+5. The explicit intent in question 4 is the proper way to do an intent.
+
+Fix:
+I changed the file "SecondFragment.kt" and replaced the implicit intent with an explicit version, using the code var intent = Intent(activity, ProductScrollingActivity::class.java), just like the explicit intent in the file "ThirdFragment.kt".

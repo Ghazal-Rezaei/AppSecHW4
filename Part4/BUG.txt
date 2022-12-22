@@ -1,0 +1,2 @@
+When using a card, the file "UseCard.kt" uses a function in the file "CardInterface.kt"; This function is problematic as it allows everyone who has access to a card_number use that card. Therefore, an attacker can use an exhaustive search on random numbers until they find an unused card!
+To fix it, I suggest getting help from the variable "token" to securely check if the user of the card is actually the client who owns it.
